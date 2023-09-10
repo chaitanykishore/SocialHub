@@ -4,10 +4,8 @@ Simple photo-sharing social media platform
 
 ### [Live Demo] (https://soocialhub.000webhostapp.com/)
 
-## username - Chaitanya kishore
-#  password - 12345
-## username - Shourya
-#  password - 12345
+# username - Chaitanya kishore /  password - 12345
+# username - Shourya / password - 12345
 
 ----
 
