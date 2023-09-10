@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #28223F;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin: 0;
+}
+  
+  header {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: #231E39;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    width: 86rem;
+    height: 4rem;
+    z-index: 1;
+  }
+  .hub {
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 4rem;
+  }
+  
+  .hub span:nth-child(2) {
+    background: #FF9900;
+    color: #000000;
+    border-radius: 0.2rem;
+    padding:  0.5vw 0.5vw 0.5vw;
+    display: inline-block;
+    width: 3rem;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+  }
+  
+  .profile img {
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .save{
+    margin-left:10rem ;
+    
+  
+  }
+  .chat{
+    margin-left:-5rem ;
+  
+  }
+  .logout{
+   
+  margin-left: -5rem;
+  
+  }
+  
+  
+  
+  
+  /* CSS */
+  .button-24 {
+    background: #FF9900;
+    border: 1px solid #FF9900;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 8px;
+    min-height: 30px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  .button-24:hover,
+  .button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF9900;
+  }
+  
+  .button-24:active {
+    opacity: .5;
+  }
+  
+  label{
+    display:flex;
+     flex-direction:column;
+     width:40px;
+     cursor:pointer;
+     height: 3rem;
+     margin-right: 4rem;
+   }
+   
+   label span{
+     background: #fff;
+     border-radius:5px;
+     height:5px;
+     margin: 7px 0;
+     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   
+   }
+   
+   
+   span:nth-of-type(1){
+     width:70%;
+     
+   }
+   
+   span:nth-of-type(2){
+     width:100%;
+   }
+   
+   
+   span:nth-of-type(3){
+     width:75%;
+    
+   }
+   
+   
+   input[type="checkbox"]{
+     display:none;
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(1){
+     transform-origin:bottom;
+     transform:rotatez(45deg) translate(8px,0px)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(2){
+     
+     transform-origin:top;
+     transform:rotatez(-45deg)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(3){
+     
+     transform-origin:bottom;
+     width:50%;
+     transform: translate(30px,-11px) rotatez(45deg);
+   
+   }
+   
+   h3 {
+       margin: 10px 0;
+   }
+   
+   h6 {
+       margin: 5px 0;
+       text-transform: uppercase;
+   }
+   
+   p {
+       font-size: 14px;
+       line-height: 21px;
+   }
+   
+   .card-container {
+    position: absolute;
+    top: 1rem;
+       background-color: #231E39;
+       border-radius: 5px;
+       box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+       color: #B3B8CD;
+       padding-top: 40px;
+       position: relative;
+       width: 350px;
+       max-width: 100%;
+       text-align: center;
+       height: 20rem;
+   }
+   .card-container .round {
+       border: 1px solid #03BFCB;
+       border-radius: 50%;
+       padding: 7px;
+   }
+   
+   button.primary {
+       background-color: #03BFCB;
+       border: 1px solid #03BFCB;
+       border-radius: 3px;
+       color: #231E39;
+       font-family: Montserrat, sans-serif;
+       font-weight: 500;
+       padding: 10px 25px;
+   }
+   
+button.follow-button{
+    background-color: #03BFCB;
+       border: 1px solid #03BFCB;
+       border-radius: 3px;
+       color: #231E39;
+       font-family: Montserrat, sans-serif;
+       font-weight: 500;
+       padding: 10px 25px;
+   }
+   button.unfollow-button{
+    background-color: #03BFCB;
+       border: 1px solid #03BFCB;
+       border-radius: 3px;
+       color: #231E39;
+       font-family: Montserrat, sans-serif;
+       font-weight: 500;
+       padding: 10px 25px;
+   }
+   
+   
+   
